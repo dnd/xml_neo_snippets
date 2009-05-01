@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>nfki</Title>
+			<Shortcut>nfki</Shortcut>
+			<Description></Description>
+			<Author></Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>fktable</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>fktable</Default>
+				</Literal>
+				<Literal>
+					<ID>propname</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>propname</Default>
+				</Literal>
+				<Literal>
+					<ID>column</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>column</Default>
+				</Literal>				
+				<Literal>
+					<ID>fkcolumn</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>fkcolumn</Default>
+				</Literal>				
+			</Declarations>
+			<Code Language="xml">
+				<![CDATA[<iforeign-key foreignTable="$fktable$" name="$propname$">
+	<ireference local="$column$" foreign="$fkcolumn$"/>
+</iforeign-key>
+$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

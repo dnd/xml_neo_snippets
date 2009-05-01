@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>ncoln</Title>
+			<Shortcut>ncoln</Shortcut>
+			<Description></Description>
+			<Author></Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>colname</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>colname</Default>
+				</Literal>
+				<Literal>
+					<ID>propname</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>propname</Default>
+				</Literal>
+				<Literal>
+					<ID>size</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>12</Default>
+				</Literal>				
+			</Declarations>
+			<Code Language="xml">
+				<![CDATA[<column name="$colname$" javaName="$propname$" type="NUMERIC" size="$size$"/>
+$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
